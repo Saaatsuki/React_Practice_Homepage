@@ -1,29 +1,29 @@
-// src/pages/homePage/index.tsx
-
-import React from 'react';
+import React, { useState } from 'react'; // ← useState を追加
 import Category from '../../components/Category';
-import BoxSx from '../../components/ItemDisplay';
-import './index.css';
+import ProductCard from '../../components/ItemDisplay';
 import { Box } from '@mui/material';
+import sampleData from '../../../Sample_data.json';
 
 const HomePage: React.FC = () => {
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  const filteredData = selectedTag
+    ? sampleData.filter((item) => item.tags.includes(selectedTag))
+    : sampleData;
+
   return (
     <div>
-    <Category />
-    {/* <div className="boxsx"> */}
-    <Box sx={{ display: 'flex', flexWrap: "wrap", justifyContent: "center" }}>
-        <BoxSx  />
-        <BoxSx />
-        <BoxSx />
-        <BoxSx />
-        <BoxSx />
-        <BoxSx />
-    </Box>
-    {/* </div> */}
-
-
-      <h1>🏠 Home Page</h1>
-      <p>ホームページのコンテンツです。</p>
+      <Category onCategorySelect={setSelectedTag} />
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 2, mt: 3 }}>
+        {filteredData.map((item, index) => (
+          <ProductCard
+            key={index}
+            productName={item.productName}
+            productImage={item.productImage}
+            productPrice={item.productPrice}
+          />
+        ))}
+      </Box>
     </div>
   );
 };

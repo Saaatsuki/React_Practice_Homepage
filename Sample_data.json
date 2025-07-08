@@ -1,0 +1,72 @@
+[
+  {
+    "productName": "こぎみゅん こっちむいてきゅん",
+    "productImage": "https://file.munyugurumi.jp/item/211491/4.jpg",
+    "productPrice": 1980,
+    "tags": ["Komugi", "Popular"],
+    "bookmarked": true
+  },
+  {
+    "productName": "ハローキティ エンジェルむにゅ",
+    "productImage": "https://file.munyugurumi.jp/item/207432/1.jpg",
+    "productPrice": 1980,
+    "tags": ["Dog"],
+    "bookmarked": false
+  },
+  {
+    "productName": "クロミ エンジェルむにゅ",
+    "productImage": "https://file.munyugurumi.jp/item/207432/8.jpg",
+    "productPrice": 1980,
+    "tags": ["Kuromi", "Popular"],
+    "bookmarked": true
+  },
+  {
+    "productName": "こぎみゅん ひまわりもきゅもきゅ",
+    "productImage": "https://file.munyugurumi.jp/item/219176b/1.jpg",
+    "productPrice": 2200,
+    "tags": ["Komugi"],
+    "bookmarked": false
+  },
+  {
+    "productName": "ハローキティアニマルポンチョ",
+    "productImage": "https://file.munyugurumi.jp/item/205636/1.jpg",
+    "productPrice": 2420,
+    "tags": ["Cat"],
+    "bookmarked": false
+  },
+  {
+    "productName": "シナモロールアニマルポンチョむにゅ",
+    "productImage": "https://file.munyugurumi.jp/item/205636/4.jpg",
+    "productPrice": 2420,
+    "tags": ["Dog", "Popular"],
+    "bookmarked": true
+  },
+  {
+    "productName": "クロミアニマルポンチョ",
+    "productImage": "https://file.munyugurumi.jp/item/205636/10.jpg",
+    "productPrice": 2420,
+    "tags": ["Kuromi"],
+    "bookmarked": false
+  },
+  {
+    "productName": "こぎみゅん 友キュンっ！",
+    "productImage": "https://file.munyugurumi.jp/item/205858/10.jpg",
+    "productPrice": 2200,
+    "tags": ["Komugi", "Popular"],
+    "bookmarked": true
+  },
+  {
+    "productName": "ハローキティ 友キュンっ！",
+    "productImage": "https://file.munyugurumi.jp/item/205858/1.jpg",
+    "productPrice": 2200,
+    "tags": ["Cat"],
+    "bookmarked": false
+  },
+  {
+    "productName": "ポムポムプリンアニマルポンチョ",
+    "productImage": "https://file.munyugurumi.jp/item/205636/7.jpg",
+    "productPrice": 2420,
+    "tags": ["Dog"],
+    "bookmarked": false
+  }
+]

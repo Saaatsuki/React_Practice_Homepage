@@ -8,7 +8,11 @@ import cinnamonFaceIcon from '../assets/cinamon.png';
 import myunFaceIcon from '../assets/myuun.png';
 import kuromiFaceIcon from '../assets/kuromi.png';
 
-export default function Category() {
+type CategoryProps = {
+  onCategorySelect: (selectedTag: string | null) => void;
+};
+
+export default function Category({ onCategorySelect }: CategoryProps) {
   const [selectedIndex, setSelectedIndex] = React.useState<number | null>(null);
 
   const categories = [
@@ -16,8 +20,14 @@ export default function Category() {
     { label: 'Cat', icon: <img src={kittyFaceIcon} alt="Cat" height={24} /> },
     { label: 'Dog', icon: <img src={cinnamonFaceIcon} alt="Dog" height={24} /> },
     { label: 'Komugi', icon: <img src={myunFaceIcon} alt="Komugi" width={40} /> },
-    { label: 'Kuromi', icon: <img src={kuromiFaceIcon} alt="Kuromi" width={40} /> },
+    { label: 'Kuromi', icon: <img src={kuromiFaceIcon} alt="Kuromi" width={40} /> }
   ];
+
+  const handleSelect = (index: number) => {
+    const newIndex = index === selectedIndex ? null : index;
+    setSelectedIndex(newIndex);
+    onCategorySelect(newIndex !== null ? categories[newIndex].label : null);
+  };
 
   return (
     <Box
@@ -33,7 +43,7 @@ export default function Category() {
         <Box
           key={index}
           sx={{ textAlign: 'center', cursor: 'pointer' }}
-          onClick={() => setSelectedIndex(index)}
+          onClick={() => handleSelect(index)}
         >
           <Paper
             elevation={0}
@@ -46,7 +56,6 @@ export default function Category() {
               justifyContent: 'center',
               borderRadius: 2,
               mx: 'auto',
-              // 大きさは変えないので transform は無し
               boxShadow: selectedIndex === index ? '0 0 10px #ff80ab' : 'none',
               transition: 'box-shadow 0.2s ease',
             }}
