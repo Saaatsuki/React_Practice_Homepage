@@ -29,14 +29,7 @@ function App() {
   return (
     <div>
       {/* ヘッダー固定 */}
-      <HeaderNav
-        style={{
-          position: 'fixed',
-          top: 0,
-          width: '100%',
-          zIndex: 1000,
-        }}
-      />
+      <HeaderNav/>
 
       {/* メインコンテンツ */}
       <div

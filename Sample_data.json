@@ -10,7 +10,7 @@
     "productName": "ハローキティ エンジェルむにゅ",
     "productImage": "https://file.munyugurumi.jp/item/207432/1.jpg",
     "productPrice": 1980,
-    "tags": ["Dog"],
+    "tags": ["Cat"],
     "bookmarked": false
   },
   {
@@ -68,5 +68,20 @@
     "productPrice": 2420,
     "tags": ["Dog"],
     "bookmarked": false
+  },
+  {
+    "productName": "ハローキティ ナース",
+    "productImage": "https://file.munyugurumi.jp/item/189813/1.jpg",
+    "productPrice": 2200,
+    "tags": ["Cat"],
+    "bookmarked": false
+  },
+  {
+    "productName": "こぎみゅん ナース",
+    "productImage": "https://file.munyugurumi.jp/item/189813/10.jpg",
+    "productPrice": 2200,
+    "tags": ["Komugi"],
+    "bookmarked": false
   }
+
 ]
